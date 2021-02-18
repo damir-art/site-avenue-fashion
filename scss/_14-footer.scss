@@ -1,0 +1,32 @@
+/* section-footer */
+.section-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f8f8f8;
+}
+
+/* row-footer */
+.row-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    color: #575153;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer__link {
+    color: #727272;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+/* section copy */
+.section-copy {
+    background-color: #333;
+}
+
+.row-copy {
+    min-height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    color: #999;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.design {
+    color: #777;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: 36px;
+}
+
+.dev {
+    color: #777;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
