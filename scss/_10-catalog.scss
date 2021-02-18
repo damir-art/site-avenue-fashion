@@ -1,0 +1,23 @@
+/* section-catalog */
+.section-catalog {
+    margin-bottom: 60px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 1fr;
+    grid-gap: 30px;
+}
+
+.catalog__item--big {
+    // background-color: #ccc;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

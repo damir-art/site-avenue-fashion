@@ -279,7 +279,7 @@ img {
 }
 
 .sidebar__item {
-  margin-left: 54px;
+  margin-right: 54px;
 }
 
 .sidebar__link {
@@ -287,6 +287,35 @@ img {
   font-size: 13px;
   text-transform: uppercase;
   color: #727272;
+}
+
+/* section-catalog */
+.section-catalog {
+  margin-bottom: 60px;
+}
+
+.catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 500px 1fr;
+      grid-template-rows: 500px 1fr;
+  grid-gap: 30px;
+}
+
+.catalog__item--big {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /* section-lookbook */
