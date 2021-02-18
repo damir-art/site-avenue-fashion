@@ -7,15 +7,29 @@ img {
     box-sizing: border-box;
 }
 
-.content-1170 {
-    max-width: 1170px;
+.content-1200 {
+    max-width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.content-1770 {
-    max-width: 1770px;
+.content-1800 {
+    max-width: 1800px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.content-1920 {
-    max-width: 1920px;
+.content-2050 {
+    max-width: 2050px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* медиазапрос 320зч */
+@media (max-width: 320px) {
+    .content-1200 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

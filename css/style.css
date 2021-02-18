@@ -1,3 +1,4 @@
+@charset "UTF-8";
 img {
   max-width: 100%;
   height: auto;
@@ -8,19 +9,33 @@ img {
           box-sizing: border-box;
 }
 
-.content-1170 {
-  max-width: 1170px;
+.content-1200 {
+  max-width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.content-1770 {
-  max-width: 1770px;
+.content-1800 {
+  max-width: 1800px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.content-1920 {
-  max-width: 1920px;
+.content-2050 {
+  max-width: 2050px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* медиазапрос 320зч */
+@media (max-width: 320px) {
+  .content-1200 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* section-top-bar */
@@ -30,7 +45,7 @@ img {
 
 .row-top-bar {
   color: #777;
-  height: 45px;
+  min-height: 45px;
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   display: -webkit-box;
@@ -45,17 +60,23 @@ img {
 }
 
 /* currency */
+.currency {
+  min-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .currency__link {
   color: #777;
   text-decoration: none;
+  margin-left: 4px;
 }
 
 /* register */
-.col-register {
-  margin-left: auto;
-  margin-right: 83px;
-}
-
 .register {
   margin: 0;
   padding: 0;
@@ -66,6 +87,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  margin-right: 83px;
+  min-height: 45px;
 }
 
 .register__r {
@@ -103,6 +127,32 @@ img {
 .cart__amount {
   color: #fff;
   text-decoration: none;
+}
+
+/* медиазапрос 720px */
+@media (max-width: 720px) {
+  .row-top-bar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .currency {
+    width: 100%;
+    min-height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .register {
+    width: 100%;
+    min-height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+  .cart {
+    width: 100%;
+  }
 }
 
 /* section-nav */
