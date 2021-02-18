@@ -2,10 +2,72 @@
 .section-slider {
     background-color: #f8f8f8;
 }
+
 .content-slider {
     min-height: 920px;
     background-image: url('../img/slide-1.png');
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: 450px;
     position: relative;
+    background-size: contain;
+}
+
+.slider__title {
+    display: flex;
+    justify-content: space-evenly;
+    color: #575153;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 450px;
+    font-weight: 700;
+    position: relative;
+    top: 60px;
+}
+
+/* медиазапросы */
+@media (max-width: 1220px) {
+    .slider__title {
+        font-size: 350px;
+        font-weight: 600;
+        top: 0;
+    }
+}
+
+@media (max-width: 912px) {
+    .content-slider {
+        background-position-x: 350px;
+    }
+    .slider__title {
+        font-size: 250px;
+        font-weight: 500;
+        top: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .slider__title {
+        font-size: 150px;
+        font-weight: 400;
+        top: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .content-slider {
+        background-position-x: 100px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider__title {
+        font-size: 100px;
+        font-weight: 300;
+        top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .content-slider {
+        background-position-x: 50px;
+    }
 }
