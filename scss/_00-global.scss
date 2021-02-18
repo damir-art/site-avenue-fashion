@@ -1,0 +1,21 @@
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+
+.content-1170 {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.content-1770 {
+    max-width: 1770px;
+    margin: 0 auto;
+}
+// .content-full {
+//     max-width: 100%;
+//     margin: 0 auto;
+// }
