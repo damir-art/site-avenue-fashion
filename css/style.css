@@ -18,6 +18,11 @@ img {
   margin: 0 auto;
 }
 
+.content-1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 /* section-top-bar */
 .section-top-bar {
   background-color: #333;
@@ -255,13 +260,47 @@ img {
 
 .content-slider {
   min-height: 920px;
-  background-image: url("../img/slide-2.png");
+  background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
   background-position-x: center;
   position: relative;
 }
 
-.section-sidebar {
-  background-color: red;
-  height: 20px;
+/* sidebar */
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sidebar__item {
+  margin-left: 54px;
+}
+
+.sidebar__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #727272;
+}
+
+/* lookbook */
+.row-lookbook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 530px;
+}
+
+.lookbook {
+  background-color: #f8f8f8;
+  max-width: 663px;
 }
