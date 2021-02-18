@@ -30,7 +30,15 @@ img {
   padding-right: 15px;
 }
 
-/* медиазапрос 320зч */
+/* медиазапрос 720px */
+@media (max-width: 720px) {
+  .content-1200--top-bar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* медиазапрос 320px */
 @media (max-width: 320px) {
   .content-1200 {
     padding-left: 0;
@@ -167,13 +175,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 /* logo */
-.col-logo {
+.logo {
   width: 300px;
 }
 
@@ -187,24 +198,20 @@ img {
 }
 
 /* nav */
-.col-nav {
-  width: 1170px;
-}
-
 .nav {
+  width: 1170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .nav__list {
-  margin: 0;
-  padding: 8px 16px;
-  border-radius: 4px;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-left: auto;
 }
 
@@ -242,10 +249,6 @@ img {
 }
 
 /* search */
-.col-search {
-  width: 300px;
-}
-
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,6 +261,7 @@ img {
   width: 190px;
   border: 1px solid #e7e7e7;
   margin-left: auto;
+  width: 190px;
 }
 
 .search__s {
@@ -301,6 +305,53 @@ img {
 .search__ico-search {
   color: #989898;
   font-size: 13px;
+}
+
+/* медиазапрос 1800px */
+@media (max-width: 1800px) {
+  .row-nav {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .logo {
+    width: auto;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+  }
+  .nav {
+    width: auto;
+    margin-left: auto;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+  }
+  .search {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .row-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .nav {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 30px;
+  }
+  .nav__list {
+    margin: 0 auto;
+  }
+  .search {
+    margin-left: 0;
+    margin: 0 auto;
+  }
 }
 
 /* slider */
