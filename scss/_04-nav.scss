@@ -18,8 +18,9 @@
 }
 .logo__link {
     color: #222;
-    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -41,6 +42,10 @@
     margin-left: 60px;
     position: relative;
 }
+.nav__item:hover .nav__dropdown {
+    display: block;
+}
+
 .nav__item:first-child {
     margin-left: 0;
 }
@@ -51,6 +56,7 @@
     color: #222;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .nav__link:hover,
@@ -62,6 +68,7 @@
     margin-top: 12px;
 }
 
+/* nav dropdown */
 .nav__dropdown {
     position: absolute;
     width: 467px;
@@ -74,6 +81,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
 }
 .dropdown__lists {
     display: flex;
@@ -209,7 +217,7 @@
     .nav {
         width: auto;
         margin-left: auto;
-        background-color: #f8f8f8;
+        background-color: rgba($color: #f8f8f8, $alpha: 0.5);
         padding: 5px 10px;
     }
     .search {
@@ -246,6 +254,33 @@
     .slider__btn {
         position: static;
         width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .content-nav {
+        padding: 0;
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .nav__item {
+        margin-left: 0;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    .nav__link {
+        flex-direction: row;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .nav__ico-angel {
+        margin-top: 0;
+        margin-left: 16px;
     }
 }
 
