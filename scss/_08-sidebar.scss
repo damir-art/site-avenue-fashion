@@ -1,18 +1,30 @@
-/* sidebar */
+/* section-sidebar */
+.section-sidebar {
+    margin-bottom: 45px;
+}
 .sidebar {
     display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 .sidebar__item {
     margin-right: 54px;
+    margin-bottom: 15px;
+}
+.sidebar__item:last-child {
+    margin-right: 0;
 }
 .sidebar__link {
-    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     color: #727272;
+    text-decoration: none;
+}
+.sidebar__link:hover {
+    color: #00c8c8;
 }

@@ -24,6 +24,14 @@
     top: 60px;
 }
 
+.hr {
+    max-width: 1770px;
+    height: 1px;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 /* медиазапросы */
 @media (max-width: 1600px) {
     .slider__title {
