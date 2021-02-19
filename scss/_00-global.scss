@@ -32,6 +32,14 @@ img {
     padding-right: 15px;
 }
 
+/* медиазапрос 870px */
+@media (max-width: 870px) {
+    .content-catalog {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 /* медиазапрос 720px */
 @media (max-width: 720px) {
     .content-1200 {
