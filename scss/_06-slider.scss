@@ -1,6 +1,7 @@
 /* slider */
 .section-slider {
     background-color: #f8f8f8;
+    margin-bottom: 60px;
 }
 
 .content-slider {
@@ -14,16 +15,23 @@
 
 .slider__title {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: #575153;
-    font-family: 'Montserrat', sans-serif;
     font-size: 450px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     position: relative;
     top: 60px;
 }
 
 /* медиазапросы */
+@media (max-width: 1600px) {
+    .slider__title {
+        font-size: 350px;
+        font-weight: 600;
+    }
+}
+
 @media (max-width: 1220px) {
     .slider__title {
         font-size: 350px;
@@ -38,16 +46,12 @@
     }
     .slider__title {
         font-size: 250px;
-        font-weight: 500;
-        top: 0;
     }
 }
 
 @media (max-width: 720px) {
     .slider__title {
         font-size: 150px;
-        font-weight: 400;
-        top: 0;
     }
 }
 
@@ -61,8 +65,6 @@
 @media (max-width: 420px) {
     .slider__title {
         font-size: 100px;
-        font-weight: 300;
-        top: 0;
     }
 }
 
