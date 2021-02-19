@@ -723,6 +723,8 @@ img {
 .catalog {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
@@ -765,7 +767,7 @@ img {
   height: 100%;
 }
 
-/* медиазапрос 1600px */
+/* медиазапрос 1200px */
 @media (max-width: 1200px) {
   .catalog {
     -ms-grid-columns: 870px;
@@ -787,6 +789,15 @@ img {
   .column {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .catalog__item {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .catalog__item--big {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 

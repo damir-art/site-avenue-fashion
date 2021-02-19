@@ -5,6 +5,7 @@
 
 .catalog {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
 }
@@ -38,7 +39,7 @@
     height: 100%;
 }
 
-/* медиазапрос 1600px */
+/* медиазапрос 1200px */
 @media (max-width: 1200px) {
     .catalog {
         grid-template-columns: 870px;
@@ -55,5 +56,12 @@
 @media (max-width: 720px) {
     .column {
         grid-template-columns: 1fr;
+    }
+    .catalog__item {
+        justify-self: center;
+    }
+    .catalog__item--big {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
