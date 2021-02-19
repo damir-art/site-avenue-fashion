@@ -6,26 +6,66 @@
 .row-copy {
     min-height: 45px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .copy {
-    color: #999;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #999;
 }
 
 .design {
-    color: #777;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin-left: auto;
-    margin-right: 36px;
+    color: #777;
 }
 
 .dev {
-    color: #777;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #777;
+}
+
+.copy__item {
+    line-height: 45px;
+    margin-right: 36px;
+}
+.copy__item:last-child {
+    margin-right: 0;
+}
+.copy__link {
+    color: #777;
+    text-decoration: none;
+}
+.copy__link:hover,
+.copy__link:focus {
+    color: #999;
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .row-copy {
+        justify-content: space-evenly;
+    }
+    .copy__item {
+        margin: 0;
+        margin-right: 15px;
+    }
+    .copy__item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 584px) {
+    .copy__item {
+        width: 100%;
+        margin: 0;
+    }
 }

@@ -12,42 +12,71 @@
 .banner {
     background-color: #333;
     width: 570px;
-    min-height: 200px;
+    height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 .banner__title {
-    color: #fff;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    color: #fff;
     text-transform: uppercase;
 }
 .banner__subtitle {
-    color: #fff;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .social {
-    font-size: 36px;
-    color: #fff;
-    background-color: #00c8c8;
-    width: 570px;
-    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #00c8c8;
+    width: 570px;
+    height: 200px;
+}
+.social__link {
+    font-size: 36px;
+    margin-right: 60px;
+    color: #fff;
+}
+.social__link:last-child {
+    margin-right: 0;
 }
 
-.social__item {
-    margin-right: 60px;
+/* медиазапрос */
+@media (max-width: 860px) {
+    .row-banner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner {
+        margin-bottom: 15px;
+    }
 }
-.social__item:last-child {
-    margin-right: 0;
+
+@media (max-width: 480px) {
+    .section-banner {
+        padding-bottom: 0;
+    }
+    .banner {
+        margin-bottom: 0;
+    }
+    .banner__title {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .banner__subtitle {
+        font-size: 24px;
+    }
+    .social__link {
+        margin-right: 32px;
+    }
 }

@@ -34,16 +34,12 @@ img {
 
 /* медиазапрос 720px */
 @media (max-width: 720px) {
-    .content-1200--top-bar {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-/* медиазапрос 320px */
-@media (max-width: 320px) {
     .content-1200 {
         padding-left: 0;
         padding-right: 0;
+    }
+    .content-copy {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
